@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "bonbons",
+  "info": {
+    "name": "Bonbon"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "price": {
+      "type": "decimal"
+    },
+    "pic": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "desc": {
+      "type": "richtext"
+    },
+    "type_de_bonbon": {
+      "model": "type-de-bonbon"
+    }
+  }
+}

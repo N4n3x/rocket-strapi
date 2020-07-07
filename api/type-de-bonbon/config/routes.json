@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/type-de-bonbons",
+      "handler": "type-de-bonbon.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/type-de-bonbons/count",
+      "handler": "type-de-bonbon.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/type-de-bonbons/:id",
+      "handler": "type-de-bonbon.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/type-de-bonbons",
+      "handler": "type-de-bonbon.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/type-de-bonbons/:id",
+      "handler": "type-de-bonbon.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/type-de-bonbons/:id",
+      "handler": "type-de-bonbon.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

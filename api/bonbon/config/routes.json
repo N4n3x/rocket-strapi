@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/bonbons",
+      "handler": "bonbon.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/bonbons/count",
+      "handler": "bonbon.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/bonbons/:id",
+      "handler": "bonbon.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/bonbons",
+      "handler": "bonbon.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/bonbons/:id",
+      "handler": "bonbon.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/bonbons/:id",
+      "handler": "bonbon.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
