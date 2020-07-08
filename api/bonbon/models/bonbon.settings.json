@@ -31,6 +31,10 @@
     },
     "type_de_bonbon": {
       "model": "type-de-bonbon"
+    },
+    "art_slug": {
+      "type": "string",
+      "required": true
     }
   }
 }
