@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "rockets",
+  "info": {
+    "name": "Rockets"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "rkt_name": {
+      "type": "string",
+      "required": true
+    },
+    "rkt_desc": {
+      "type": "richtext"
+    },
+    "rkt_slug": {
+      "type": "string",
+      "required": true
+    },
+    "rkt_img": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}
